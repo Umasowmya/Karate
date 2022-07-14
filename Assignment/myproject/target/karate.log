@@ -1,0 +1,43 @@
+14:35:51.675 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+14:35:52.361 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:35:52.370 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+14:35:53.323 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:35:53.576 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/2294809077
+1 > Authorization: Bearer 83b75e918c4dd472ee104061b9c29d1d6fa41988
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:35:54.534 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 947
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 202
+1 < Connection: keep-alive
+1 < Date: Thu, 14 Jul 2022 09:05:54 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 a54512dcc1a642557608accecd0a680a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 3pOaDfaXH1BPkoLZ-pddt98lwfR0oAYQd80UOD34R2sgHnMtQk-ZvA==
+1 < Set-Cookie: csrf=90b0b31c16264032aebcd90c5f3e08e8; Max-Age=1973149554000; Expires=Tue, 25 Feb 64549 11:25:54 GMT; Domain=api.todoist.com; Secure
+{
+	"id": 2294809077,
+	"order": 2,
+	"color": 47,
+	"name": "Todo List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2294809077"
+}
+
+
+14:35:55.163 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:assignment/features/project.feature

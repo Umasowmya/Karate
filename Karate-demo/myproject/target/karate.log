@@ -1,0 +1,67 @@
+15:45:32.785 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:45:33.563 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:45:33.568 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+15:45:34.571 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:45:34.571 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+15:45:34.695 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('FeatureCall.feature') {pageNo:'2'}
+15:45:34.883 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:45:34.883 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=%23%28pageNo%29
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:45:35.276 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 388
+1 < 200
+1 < Date: Thu, 14 Jul 2022 10:15:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 120
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HFV7JYG3ycNKYSHcBP2REyYPTzwX%2Fub1HoWxFxjhGNW7TtaA7Iv6gbphBWhZeZmW5%2BxTWSHBDj9oYeYu5hObiO39sQHTEE1WuSmbsV03a%2Fg9rAh28q6W%2BGPJQg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 72a97f7d584f4adb-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:45:35.276 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 388
+1 < 200
+1 < Date: Thu, 14 Jul 2022 10:15:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 120
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0%2FCjLvi32VKkeV8itMxwWjq%2BYP8kVaWqA0d5SdRpSIktVoE1U1RpKc0A%2FQSC45jqTeuRMLMcyMl%2F8zR%2BbVbM0VHPhdAMfxRZkqyU84nC%2F9S7l87b8fKfvSUPPw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 72a97f7d5e264b1c-HYD
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:45:35.293 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('FeatureCall.feature') {pageNo:'2'}
+15:45:36.005 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:testingAcademy/features/Calling.feature
+15:45:36.108 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:testingAcademy/features/SchemaValidationThirdParty.feature
